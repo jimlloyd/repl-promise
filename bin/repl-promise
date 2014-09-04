@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var repl = require('../lib/index.js')
+
+var options = {
+    prompt: 'node > ',
+    input: process.stdin,
+    output: process.stdout,
+};
+
+repl.start(options);
