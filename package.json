@@ -1,0 +1,26 @@
+{
+  "name": "repl-promise",
+  "version": "0.0.0",
+  "description": "An experimental REPL implementation using Promises.",
+  "bin": "./bin/repl-promise",
+  "scripts": {
+    "test": "make"
+  },
+  "keywords": [
+    "REPL",
+    "promises"
+  ],
+  "author": "jim.lloyd@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "byline": "^4.1.1",
+    "lodash": "^2.4.1",
+    "q": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "chai-as-promised": "^4.1.1",
+    "jshint": "^2.5.5",
+    "mocha": "^1.21.4"
+  }
+}
