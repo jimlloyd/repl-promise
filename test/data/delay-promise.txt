@@ -1,0 +1,14 @@
+function delay(ms) {
+    var setTimeout = require('timers').setTimeout;
+    var deferred = Q.defer();
+    function foo() {
+        deferred.resolve({
+            wokeafter: ms,
+        });
+    }
+    setTimeout(foo, ms);
+    return deferred.promise;
+}
+delay(10)
+delay(20)
+delay(5)
