@@ -1,3 +1,6 @@
+// comment
+var x = 1   // comment
+x
 function delay(ms) {
     var setTimeout = require('timers').setTimeout;
     var deferred = Q.defer();
@@ -12,3 +15,6 @@ function delay(ms) {
 delay(10)
 delay(20)
 delay(5)
+null
+undefined
+"Goodbye"

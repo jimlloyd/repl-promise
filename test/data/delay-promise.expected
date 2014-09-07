@@ -1,3 +1,7 @@
+node > // comment
+node > var x = 1   // comment
+node > x
+1
 node > function delay(ms) {
 ...     var setTimeout = require('timers').setTimeout;
 ...     var deferred = Q.defer();
@@ -15,3 +19,7 @@ node > delay(20)
 { wokeafter: 20 }
 node > delay(5)
 { wokeafter: 5 }
+node > null
+node > undefined
+node > "Goodbye"
+'Goodbye'
