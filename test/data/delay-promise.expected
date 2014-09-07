@@ -15,3 +15,7 @@ node > delay(20)
 { wokeafter: 20 }
 node > delay(5)
 { wokeafter: 5 }
+node > null
+node > undefined
+node > "Goodbye"
+'Goodbye'

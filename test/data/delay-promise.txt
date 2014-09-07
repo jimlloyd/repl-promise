@@ -12,3 +12,6 @@ function delay(ms) {
 delay(10)
 delay(20)
 delay(5)
+null
+undefined
+"Goodbye"
