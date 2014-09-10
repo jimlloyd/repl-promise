@@ -1,0 +1,8 @@
+node > // 'timers' is in context only because it was added when repl was created in unit test.
+node > var deferred = Q.defer();
+node > var timeoutObject = timers.setTimeout(function(){
+...     deferred.resolve({done: true});
+... }, 50);
+node > deferred.promise
+{ done: true }
+node > 

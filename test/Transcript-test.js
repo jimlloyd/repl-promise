@@ -24,7 +24,8 @@ function transcriptTest(name, done) {
         output: output,
     };
 
-    repl.start(options);
+    var replServer = repl.start(options, {});
+    replServer.context.timers = require('timers');
 }
 
 describe('Transcript', function() {
@@ -32,5 +33,10 @@ describe('Transcript', function() {
     it('should produce the expected transcript given delay-promise.txt', function(done) {
         this.timeout(5000);
         transcriptTest('delay-promise', done);
+    });
+
+    it('should produce the expected transcript given context-test.txt', function(done) {
+        this.timeout(5000);
+        transcriptTest('context-test', done);
     });
 });
