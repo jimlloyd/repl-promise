@@ -3,5 +3,5 @@ var deferred = Q.defer();
 var timeoutObject = timers.setTimeout(function(){
     deferred.resolve({done: true});
 }, 50);
-deferred.promise
 
+deferred.promise

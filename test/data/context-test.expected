@@ -3,6 +3,6 @@ node > var deferred = Q.defer();
 node > var timeoutObject = timers.setTimeout(function(){
 ...     deferred.resolve({done: true});
 ... }, 50);
+node > 
 node > deferred.promise
 { done: true }
-node > 
