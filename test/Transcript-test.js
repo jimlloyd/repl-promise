@@ -24,8 +24,9 @@ function transcriptTest(name, done) {
         output: output,
     };
 
-    var replServer = repl.start(options, {});
-    replServer.context.timers = require('timers');
+
+    var initialContext = { timers: require('timers') };
+    var replServer = repl.start(options, initialContext);
 }
 
 describe('Transcript', function() {

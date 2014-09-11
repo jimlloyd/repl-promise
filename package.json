@@ -1,6 +1,6 @@
 {
   "name": "repl-promise",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An alternative REPL implementation using Promises.",
   "bin": {
     "repl-promise": "./bin/repl-promise"
