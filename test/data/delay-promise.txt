@@ -15,6 +15,16 @@ function delay(ms) {
 delay(10)
 delay(20)
 delay(5)
+
+// A promise on RHS of var assignment is resolved:
+var v = new Q(23)
+typeof v
+v
+
+var y = new Q(42).delay(20)
+typeof y
+y
+
 null
 undefined
 "Goodbye"
