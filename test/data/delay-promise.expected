@@ -19,6 +19,20 @@ node > delay(20)
 { wokeafter: 20 }
 node > delay(5)
 { wokeafter: 5 }
+node > 
+node > // A promise on RHS of var assignment is resolved:
+node > var v = new Q(23)
+node > typeof v
+'number'
+node > v
+23
+node > 
+node > var y = new Q(42).delay(20)
+node > typeof y
+'number'
+node > y
+42
+node > 
 node > null
 node > undefined
 node > "Goodbye"
