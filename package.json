@@ -1,6 +1,6 @@
 {
   "name": "repl-promise",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An alternative REPL implementation using Promises.",
   "bin": {
     "repl-promise": "./bin/repl-promise"
@@ -27,12 +27,14 @@
     "chai": "^1.9.1",
     "chai-as-promised": "^4.1.1",
     "concat-stream": "^1.4.6",
+    "debug": "^2.0.0",
     "jshint": "^2.5.5",
     "mocha": "^1.21.4"
   },
   "jshintConfig": {
     "node": true,
     "globalstrict": false,
+    "indent": 2,
     "globals": {
       "expect": true,
       "describe": true,
